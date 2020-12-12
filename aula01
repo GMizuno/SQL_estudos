@@ -1,0 +1,25 @@
+/* Para criar tabel usando o sqlite, abra o terminal e digite o seguinte sqlite3 nome.bd 
+em seguinda crie um tabela digitando create table NOME_TABEL ( ...)
+
+/* Criando tabela
+
+CREATE TABLE clientes (
+    codigo INT,
+    nome   VARCHAR (100) 
+);
+
+/* Alterando tabela criada
+
+ALTER TABLE clientes ADD COLUMN email VARCHAR (50);
+
+/* Removendo coluna, no sqlite nao eh possivel
+
+ALTER TABLE clientes DROP COLUMN email;
+
+/* mudando o tipo de de uma variavel, no sqlite nao eh possivel
+
+ALTER TABLE clientes MODIFY COLUMN email VARCHAR (100);
+
+/* Removendo tabela
+
+DROP TABLE clientes;
