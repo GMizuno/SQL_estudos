@@ -1,0 +1,7 @@
+Conteudo das aulas;
+
+Aulas 01 - Criando um bd e tabela e alterando valores (comandos; CREATE DATABASE, CREATE TABLE, ALTER ... ADD, ALTER ... DROP, ALTER ... MODIFY  e DROP)
+Aulas 02 - Inserindo valores (comandos; INSERT INTO)
+Aulas 03 - Atualizando valores (comandos; UPDATE) 
+Aulas 04 - Deletando campos(comandos; DELETE)
+Aulas 05 - Selecionando campos com condições (comandos; IN, NOT IN, LIKE, NOT LIKE, BETWEEN)

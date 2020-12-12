@@ -1,7 +1,0 @@
-/* Criando tabela produtos
-
-CREATE TABLE produtos (
-    codigo INT,
-    nome   VARCHAR (100),
-    preco  DECIMAL (10, 2) 
-);
