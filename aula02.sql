@@ -6,7 +6,6 @@ CREATE TABLE produtos (
     preco  DECIMAL (10, 2) /* numero decimal com 10 digitos com 2 digitos dps da virgulas */ 
 );
 
-
 /* Inserindo produtos 
 Cafe esta com '' pois eh informacao textual*/ 
 insert into produtos (codigo, nome, preco) values (1, 'cafe', 3.9);

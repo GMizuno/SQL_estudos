@@ -12,6 +12,7 @@ select * from produtos;
 
 /* deletando com uma condicao*/
 delete from produtos where preco < 5.1;
+
 /* delete from produtos where preco <= 5.1*/;
 select * from produtos;
 

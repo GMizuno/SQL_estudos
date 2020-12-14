@@ -29,3 +29,6 @@ SELECT * FROM produtos
 UPDATE produtos SET preco = (80, 10, 90) WHERE codigo in (1,2,3) ;
     
 SELECT * FROM produtos
+
+
+

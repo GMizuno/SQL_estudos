@@ -11,6 +11,7 @@ select preco, nome from produtos
 /* selecionando com uma condicao*/
 select nome, preco from produtos where codigo = 10
 select nome, preco from produtos where codigo in (10, 1, 8)
+
 /*note qu 15 nao existe*/
 select nome, preco from produtos where codigo in (10, 1, 8, 15)
 
@@ -31,5 +32,4 @@ select * from produtos where nome like '%a'
 
 /*retorne os produtos pussuem letra a*/
 select * from produtos where nome like '%a%';
-
 select * from produtos where nome like '%ag%';
