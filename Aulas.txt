@@ -7,7 +7,9 @@ Aula 04 - Deletando campos(comandos; DELETE)
 Aula 05 - Selecionando campos com condições (comandos; IN, NOT IN, LIKE, NOT LIKE, BETWEEN)
 Aula 06 - Usando group by e order by (comandos; GROUP BY e ORDER BY)
 Aula 07 - Usando funções de agregação e Having (comandos; MAX, MIN, AVG, COUNT)
-Aula 07 - Usando CASE (comandos; CASE)
+Aula 08 - Usando CASE (comandos; CASE)
+Aula 09 - Truque Case Zero/Null (comandos; CASE, AVG, MIN, MAX)
+Aula 10 - JOIN parte 1 (comandos; INNER JOIN, LEFT JOIN)
 
 
 Exercicios; 
