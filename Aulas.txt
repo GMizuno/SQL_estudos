@@ -11,5 +11,23 @@ Aula 08 - Usando CASE (comandos; CASE)
 Aula 09 - Truque Case Zero/Null (comandos; CASE, AVG, MIN, MAX)
 Aula 10 - JOIN parte 1 (comandos; INNER JOIN, LEFT JOIN)
 
+Exercícios; Usarei o arquivo .db (link para download: https://drive.google.com/file/d/1QnH5Zs4d5_cxdClbjVAo-GfEgQTBNhEI/view). Os exercícios foram 
+            baseados ou tirados do repositório https://github.com/TeoCalvo/teoSQL-V2.
 
-Exercicios; 
+01 - Quantos produtos temos da categoria 'artes'?;
+02 - Quantos produtos tem mais de 5 litros?;
+03 - Crie uma coluna nova que contenha a informação de volume em m3;
+04 - Quantos produtos de 'beleza_saude' com menos de 1 litro?;
+05 - Faça uma query que apresente o tamanho médio, máximo e mínimo da descrição do objeto por categoria;
+06 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria;
+07 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria;
+     Considere apenas os objetos que tenham a descrição maior que 100;
+08 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria;
+     Considere apenas os objetos que tenham a descrição maior que 100. Exiba apenas as categorias com tamanho médio de descrição do
+     objeto maior que 500 caracteres;
+09 - Qual o valor total de receita gerada por clientes de cada estado? Considere a base completa, com apenas pedidos entregues;
+10 - Qual o valor total de receita gerada por sellers de cada estado? Considere a base completa, com apenas pedidos entregues;
+11 - Qual o peso médio dos produtos vendidos por sellers de cada estado? Considere apenas o ano de 2017 e pedidos entregues nesta análise;
+12 -
+13 -
+14 -
