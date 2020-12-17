@@ -20,9 +20,9 @@ Exercícios; Usarei o arquivo .db (link para download: https://drive.google.com/
 04 - Quantos produtos de 'beleza_saude' com menos de 1 litro?;
 05 - Faça uma query que apresente o tamanho médio, máximo e mínimo da descrição do objeto por categoria;
 06 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria;
-07 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria;
+07 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria.
      Considere apenas os objetos que tenham a descrição maior que 100;
-08 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria;
+08 - Faça uma query que apresente o tamanho médio, máximo e mínimo do nome do objeto por categoria.
      Considere apenas os objetos que tenham a descrição maior que 100. Exiba apenas as categorias com tamanho médio de descrição do
      objeto maior que 500 caracteres;
 09 - Qual o valor total de receita gerada por clientes de cada estado? Considere a base completa, com apenas pedidos entregues;
