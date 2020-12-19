@@ -89,14 +89,60 @@ ORDER BY lucro_por_cliente DESC
 -- ORDER BY lucro_por_estado DESC
 
 -- Ex: 10
+SELECT 
+       vendedor.seller_state,
+       SUM(itens.price)/COUNT(distinct vendedor.seller_id) as lucro_por_seller_do_estado,
+       SUM(itens.price) as lucro_por_estado,
+       COUNT(distinct vendedor.seller_id) as num_de_sellers
+FROM tb_sellers as vendedor
+LEFT JOIN tb_order_items as itens
+ON vendedor.seller_id = itens.seller_id
+
+LEFT JOIN tb_orders AS pedidos
+ON itens.order_id = pedidos.order_id
+
+where order_status = 'delivered'
+
+GROUP BY 1
+ORDER BY 2 DESC;
 
 -- Ex: 11
+SELECT 
+       vendedor.seller_state,
+       AVG(produtos.product_weight_g) AS peso_medio,
+       COUNT(DISTINCT vendedor.seller_id) AS num_vendedor
+FROM tb_products as produtos
+LEFT JOIN tb_order_items AS itens
+ON produtos.product_id = itens.product_id
+
+LEFT JOIN tb_sellers as vendedor
+ON vendedor.seller_id = itens.seller_id
+
+LEFT JOIN tb_orders AS pedidos
+ON pedidos.order_id = itens.order_id
+
+WHERE order_status = 'delivered' AND 
+      strftime('%Y', order_approved_at) = '2017'
+
+GROUP BY 1
 
 -- Ex: 12
+SELECT 
+       product_category_name,
+       SUM(price) AS lucro
+FROM tb_products AS produto
+LEFT JOIN tb_order_items AS itens
+ON produto.product_id = itens.product_id
+
+where product_category_name IS NOT NULL 
+
+GROUP BY 1
+ORDER BY lucro DESC
 
 -- Ex: 13
 
 -- Ex: 14
+
 
 -- Base 
 SELECT * FROM tb_products;

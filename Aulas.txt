@@ -14,6 +14,8 @@ Aula 10 - JOIN parte 1 (comandos; INNER JOIN, LEFT JOIN)
 Exercícios; Usarei o arquivo .db (link para download: https://drive.google.com/file/d/1QnH5Zs4d5_cxdClbjVAo-GfEgQTBNhEI/view). Os exercícios foram 
             baseados ou tirados do repositório https://github.com/TeoCalvo/teoSQL-V2.
 
+OBS; Esse exercícios não seguem uma ordem de dificuldade
+
 01 - Quantos produtos temos da categoria 'artes'?;
 02 - Quantos produtos tem mais de 5 litros?;
 03 - Crie uma coluna nova que contenha a informação de volume em m3;
@@ -28,7 +30,7 @@ Exercícios; Usarei o arquivo .db (link para download: https://drive.google.com/
 09 - Qual o valor total de receita gerada por clientes de cada estado? Considere a base completa, com apenas pedidos entregues;
 10 - Qual o valor total de receita gerada por sellers de cada estado? Considere a base completa, com apenas pedidos entregues;
 11 - Qual o peso médio dos produtos vendidos por sellers de cada estado? Considere apenas o ano de 2017 e pedidos entregues nesta análise;
-12 -
-13 -
+12 - Retorne a categoria de produto menor/maior lucro
+13 - Retorne a categoria de produto menos/mais quantidades vendidas
 14 -
 15 - 
