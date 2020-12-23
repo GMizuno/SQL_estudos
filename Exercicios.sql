@@ -140,9 +140,52 @@ GROUP BY 1
 ORDER BY lucro DESC
 
 -- Ex: 13
+SELECT 
+       product_category_name,
+       COUNT(itens.product_id) AS num_de_compras
+FROM tb_order_items as itens
+LEFT JOIN tb_products AS produtos
+ON produtos.product_id = itens.product_id 
+
+LEFT JOIN tb_orders as pedidos
+ON pedidos.order_id = itens.order_id
+
+where pedidos.order_status = 'delivered' AND product_category_name IS NOT NULL 
+
+GROUP BY 1
+
+ORDER BY num_de_compras DESC
 
 -- Ex: 14
+SELECT
+       SUM(price) as lucro,
+       strftime('%d-%m-%Y', pedidos.order_approved_at) as dia
+FROM tb_order_items AS itens
+LEFT JOIN tb_orders as pedidos
+ON itens.order_id = pedidos.order_id    
 
+WHERE dia IS NOT NULL
+
+GROUP BY dia
+ORDER BY LUCRO DESC
+
+-- Ex: 15
+SELECT
+       COUNT(itens.order_id) as num_pedidos,
+       strftime('%d-%m-%Y', pedidos.order_approved_at) as dia
+FROM tb_order_items AS itens
+LEFT JOIN tb_orders as pedidos
+ON itens.order_id = pedidos.order_id    
+
+WHERE dia IS NOT NULL
+
+GROUP BY dia
+ORDER BY num_pedidos DESC
+
+-- Ex: 16
+
+-- Ex: 17
+ 
 
 -- Base 
 SELECT * FROM tb_products;
@@ -154,3 +197,26 @@ SELECT * FROM tb_orders;
 SELECT * FROM tb_product_category_name_translation;
 SELECT * FROM tb_sellers;
 SELECT * FROM tb_customers;
+
+-- Teste para entender o order_id
+SELECT DISTINCT order_id, order_item_id
+FROM tb_order_items as itens
+WHERE order_item_id >= 10
+ORDER BY order_item_id ASC
+
+-- Veja o q mesmo pedido possui mais de um item e que a coluna price mostra o preco de cada item 
+-- e não o total do pedidos, ou seja, temos que somar todos os preçoes para achar o total do pedidos
+-- o mesmo vale para frente 
+SELECT *
+FROM tb_order_items
+WHERE order_id = '8272b63d03f5f79c56e9e4120aec44ef'
+
+SELECT *
+FROM tb_order_items
+WHERE order_id = '30bdf3d824d824610a49887486debcaf'
+
+
+SELECT COUNT(product_id), product_id
+FROM tb_order_items
+WHERE order_id = '30bdf3d824d824610a49887486debcaf'
+GROUP BY product_id
