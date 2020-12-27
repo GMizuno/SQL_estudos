@@ -36,3 +36,5 @@ OBS; Esse exercícios não seguem uma ordem de dificuldade
 14 - Qual é o dia com maior lucro;
 15 - Qual é o dia com mais pedidos feitos;
 16 - Qual categoria possui o maior frente;
+17 - 
+18 - 
