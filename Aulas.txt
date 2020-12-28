@@ -12,8 +12,19 @@ Aula 09 - Truque Case Zero/Null (comandos; CASE, AVG, MIN, MAX)
 Aula 10 - JOIN parte (comandos; INNER JOIN, LEFT JOIN)
 Aula 11 - 
 
-Exercícios; Usarei o arquivo .db (link para download: https://drive.google.com/file/d/1QnH5Zs4d5_cxdClbjVAo-GfEgQTBNhEI/view). Os exercícios foram 
-            baseados ou tirados do repositório https://github.com/TeoCalvo/teoSQL-V2.
+Exercícios 1; Usarei a tabel Futebol.db
+OBS; Esse exercícios não seguem uma ordem de dificuldade
+
+01 - Retorne apenas os nomes dos times em ordem alfabética;
+02 - Retorne o nome do time com o seu respectivo estado;
+03 - Retorne a quantidade de times por estado;
+04 - Retorne a quantidade de gols de cada estado;
+05 - Retorne a quantidade de pontos de cada estado;
+06 - Retorne a quantidade de gols de cada estado por time;
+07 - Classifique os times conformes os criterios do campeonato (Campeão, Libertadores, Sulamericana,...)
+
+Exercícios 2; Usarei o arquivo .db (link para download: https://drive.google.com/file/d/1QnH5Zs4d5_cxdClbjVAo-GfEgQTBNhEI/view). Os exercícios foram 
+             baseados ou tirados do repositório https://github.com/TeoCalvo/teoSQL-V2.
 
 OBS; Esse exercícios não seguem uma ordem de dificuldade
 
@@ -38,3 +49,4 @@ OBS; Esse exercícios não seguem uma ordem de dificuldade
 16 - Qual categoria possui o maior frente;
 17 - 
 18 - 
+
