@@ -10,7 +10,7 @@ Aula 07 - Usando funções de agregação e Having (comandos; MAX, MIN, AVG, COU
 Aula 08 - Usando CASE (comandos; CASE)
 Aula 09 - Truque Case Zero/Null (comandos; CASE, AVG, MIN, MAX)
 Aula 10 - JOIN parte (comandos; INNER JOIN, LEFT JOIN)
-Aula 11 - 
+Aula 11 - Subquerie (comandos; SELECT, AVG, ...)
 
 Exercícios 1; Usarei a tabel Futebol.db
 OBS; Esse exercícios não seguem uma ordem de dificuldade

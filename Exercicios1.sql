@@ -69,7 +69,7 @@ ON estados.id = times_estados.id_estado
 GROUP BY Estado
 ORDER BY Pontos_por_time DESC
 
--- Ex: 07 - Solução 1
+-- Ex: 07 - Solução 1, mais trabalhosa
 -- Descobrindo como ficou classificação
 SELECT * 
 FROM times
@@ -86,6 +86,29 @@ CASE
  WHEN pontos <= 29 THEN 'Rebaixado'
  ELSE 'Copa do Brasil'
 END AS Situacao, `gols pró`, `gols contra`
+FROM times
+ORDER BY pontos DESC
+
+-- Ex: 07 - Solução 2, soluções inteligente 
+SELECT *,
+CASE 
+    WHEN id IN (
+        SELECT id 
+        FROM times 
+        ORDER by pontos DESC LIMIT 6
+    ) THEN 'Libertadores'
+    WHEN id IN (
+        SELECT id 
+        FROM times 
+        ORDER by pontos DESC LIMIT 6 OFFSET 6
+    ) THEN 'Sulamericana'
+    WHEN id IN (
+        SELECT id 
+        FROM times 
+        ORDER by pontos DESC LIMIT 4 OFFSET 12
+    ) THEN 'Copa do Brasil'
+    ELSE 'Rebaixado'
+END AS Situacao
 FROM times
 ORDER BY pontos DESC
 
