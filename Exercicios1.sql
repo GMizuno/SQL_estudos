@@ -112,6 +112,8 @@ END AS Situacao
 FROM times
 ORDER BY pontos DESC
 
+-- Ex: 07 - Solução 2, usando Window Function
+
 -- Bases
 SELECT * FROM times
 SELECT * FROM times_estados
