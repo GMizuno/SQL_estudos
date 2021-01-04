@@ -61,6 +61,8 @@ tb_seller_order as (
     ORDER BY seller_id
 )
 
+SELECT * FROM tb_seller_order
+
 SELECT seller_id, product_id, Qtd_produto
 FROM tb_seller_order
 WHERE Order_qtd = 1
